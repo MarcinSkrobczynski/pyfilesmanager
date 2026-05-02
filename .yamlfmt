@@ -1,0 +1,6 @@
+formatter:
+  max_line_length: 0
+  indent: 2
+  force_quote_style: double
+  force_array_style: block
+  retain_line_breaks_single: true
