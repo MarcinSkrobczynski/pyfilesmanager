@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.3.0 (2026-05-03)
+
+### Features
+
+- Update semver tags ([#6](https://github.com/MarcinSkrobczynski/pyfilesmanager/pull/6),
+  [`8aa08e6`](https://github.com/MarcinSkrobczynski/pyfilesmanager/commit/8aa08e65f8da0584feeb03bb230321b477046a03))
+
+
 ## v0.2.0 (2026-05-03)
 
 ### Features
