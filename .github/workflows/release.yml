@@ -78,7 +78,7 @@ jobs:
           fetch-depth: 1
 
       - name: Setup | Download Distribution Artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         if: ${{ needs.build.outputs.new-release-detected == 'true' }}
         id: artifact-download
         with:
@@ -139,14 +139,14 @@ jobs:
         run: uv sync --group build
 
       - name: Setup | Download Build Artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         id: artifact-download
         with:
           name: ${{ needs.build.outputs.distribution-artifacts }}
           path: dist
 
       - name: Setup | Download Lock File Artifact
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: ${{ needs.build.outputs.lock-file-artifact }}
 
