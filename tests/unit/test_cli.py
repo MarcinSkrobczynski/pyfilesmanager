@@ -1,6 +1,3 @@
-import pathlib
-from unittest.mock import patch
-
 from click.testing import CliRunner
 
 from pyfilesmanager import __version__

@@ -1,5 +1,3 @@
-import pathlib
-
 import click
 
 from pyfilesmanager import __version__
