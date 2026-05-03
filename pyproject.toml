@@ -1,0 +1,40 @@
+[project]
+name = "pyfilesmanager"
+version = "0.0.0"
+description = "Files manager utilities in python"
+authors = [{ name = "Marcin Skrobczyński", email = "marcin@skrobczynski.pl" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+build = ["python-semantic-release>=10.5.0"]
+test = ["pytest>=9"]
+
+################################################################################
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+################################################################################
+
+[tool.semantic_release]
+version_toml = ["pyproject.toml:project.version"]
+build_command = """
+    uv lock --upgrade-package "$PACKAGE_NAME"
+    git add uv.lock
+    uv build
+"""
+upload_to_pypi = false
+commit_parser = "conventional"
+commit_message = "chore(release): {version}"
+allow_zero_version = true
+
+[tool.semantic_release.changelog]
+mode = "update"
+exclude_commit_patterns = ["^docs:", "^test:"]
+default_templates = { changelog_file = "CHANGELOG.md", output_format = "md" }
+
+[tool.semantic_release.publish]
+upload_to_vcs_release = true

@@ -1,6 +1,6 @@
 .PHONY: all install autoupdate lint clean test
 
-all: install lint
+all: install lint test
 
 install:
 	pre-commit install
@@ -14,4 +14,5 @@ lint:
 clean:
 	pre-commit clean
 
-test: lint
+test:
+	uv run pytest -vv tests/

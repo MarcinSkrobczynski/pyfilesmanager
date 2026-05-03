@@ -16,15 +16,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Setup | Checkout
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
-      - name: Setup python
+      - name: Setup | Setup python
         uses: actions/setup-python@v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
-      - name: Run pre-commit hooks
+      - name: Test | Run pre-commit hooks
         uses: pre-commit/action@v3.0.1
