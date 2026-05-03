@@ -90,8 +90,8 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
-      - name: Setup | Install test dependencies
-        run: uv sync --group test
+      - name: Setup | Install tests dependencies
+        run: uv sync --group tests
 
       - name: Setup | Install distribution artifact
         if: ${{ steps.artifact-download.outcome == 'success' }}
@@ -100,7 +100,7 @@ jobs:
           uv pip install dist/pyfilesmanager-*.whl
 
       - name: Test | Run pytest
-        run: uv run pytest -vv tests/e2e/
+        run: make e2e-tests
 
   release:
     runs-on: ubuntu-latest
