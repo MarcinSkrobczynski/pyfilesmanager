@@ -1,6 +1,6 @@
 [project]
 name = "pyfilesmanager"
-version = "0.0.0"
+version = "0.1.0"
 description = "Files manager utilities in python"
 authors = [{ name = "Marcin Skrobczyński", email = "marcin@skrobczynski.pl" }]
 readme = "README.md"
