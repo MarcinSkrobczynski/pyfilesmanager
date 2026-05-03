@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.3.2 (2026-05-03)
+
+### Continuous Integration
+
+- Add dependabot ([#8](https://github.com/MarcinSkrobczynski/pyfilesmanager/pull/8),
+  [`6cfc576`](https://github.com/MarcinSkrobczynski/pyfilesmanager/commit/6cfc576305ac4619274f7cff9ba745077485fb46))
+
+
 ## v0.3.1 (2026-05-03)
 
 ### Continuous Integration
