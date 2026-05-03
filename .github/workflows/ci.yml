@@ -10,21 +10,48 @@ on:
       - synchronize
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-ci-${{ github.ref_name }}
+  cancel-in-progress: false
+
 jobs:
   pre-commit:
     name: Pre-commit hooks
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Setup | Checkout
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
-      - name: Setup python
+      - name: Setup | Setup python
         uses: actions/setup-python@v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
-      - name: Run pre-commit hooks
+      - name: Test | Run pre-commit hooks
         uses: pre-commit/action@v3.0.1
+
+  unittests:
+    name: Unit tests
+    runs-on: ubuntu-latest
+    needs:
+      - pre-commit
+
+    steps:
+      - name: Setup | Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup | Install uv and set the python version
+        uses: astral-sh/setup-uv@v7
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Setup | Install tests dependencies
+        run: uv sync --group tests
+
+      - name: Test | Run unit tests
+        run: make unit-tests

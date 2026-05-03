@@ -1,6 +1,6 @@
-.PHONY: all install autoupdate lint clean test
+.PHONY: all install autoupdate lint clean test unit-tests e2e-tests
 
-all: install lint
+all: install lint test
 
 install:
 	pre-commit install
@@ -14,4 +14,10 @@ lint:
 clean:
 	pre-commit clean
 
-test: lint
+unit-tests:
+	uv run pytest -vv --cov=pyfilesmanager --cov-fail-under=100 tests/unit/
+
+e2e-tests:
+	uv run pytest -vv tests/e2e/
+
+test: unit-tests e2e-tests
