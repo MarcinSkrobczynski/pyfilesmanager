@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.3.1 (2026-05-03)
+
+### Continuous Integration
+
+- Add label sync ([#7](https://github.com/MarcinSkrobczynski/pyfilesmanager/pull/7),
+  [`87f4496`](https://github.com/MarcinSkrobczynski/pyfilesmanager/commit/87f44966acb763c9b18ba2c2d26ba9ce46c5a2b0))
+
+
 ## v0.3.0 (2026-05-03)
 
 ### Features
