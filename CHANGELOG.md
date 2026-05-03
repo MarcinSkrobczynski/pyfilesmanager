@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v0.3.3 (2026-05-03)
+
+### Build System
+
+- **deps**: Bump actions/download-artifact from 7 to 8
+  ([#5](https://github.com/MarcinSkrobczynski/pyfilesmanager/pull/5),
+  [`99da0f4`](https://github.com/MarcinSkrobczynski/pyfilesmanager/commit/99da0f450ce06cd6351aa00d1e0fcb846cfbc52f))
+
+
 ## v0.3.2 (2026-05-03)
 
 ### Continuous Integration
