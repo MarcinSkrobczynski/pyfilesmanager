@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.0 (2026-05-03)
+
+### Features
+
+- Add find-duplicates subcommand ([#2](https://github.com/MarcinSkrobczynski/pyfilesmanager/pull/2),
+  [`2f4d7a3`](https://github.com/MarcinSkrobczynski/pyfilesmanager/commit/2f4d7a3b8109c4764f77f3e0ef48a888a905f138))
+
+
 ## v0.1.0 (2026-05-03)
 
 ### Features
