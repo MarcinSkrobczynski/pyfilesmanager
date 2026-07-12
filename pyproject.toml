@@ -5,7 +5,7 @@ description = "Files manager utilities in python"
 authors = [{ name = "Marcin Skrobczyński", email = "marcin@skrobczynski.pl" }]
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["click>=8.0.0,<9.0.0"]
+dependencies = ["click>=8.4.2,<9.0.0"]
 
 [dependency-groups]
 build = ["python-semantic-release>=10.5.0"]
