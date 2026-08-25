@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v0.3.4 (2026-08-25)
+
+### Build System
+
+- **deps**: Bump actions/checkout from 6 to 7
+  ([#10](https://github.com/MarcinSkrobczynski/pyfilesmanager/pull/10),
+  [`1c3880c`](https://github.com/MarcinSkrobczynski/pyfilesmanager/commit/1c3880c0405b75602fad7b43c7336d830d8a9237))
+
+
 ## v0.3.3 (2026-05-03)
 
 ### Build System
