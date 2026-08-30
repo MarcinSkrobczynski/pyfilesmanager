@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v0.3.9 (2026-08-30)
+
+### Build System
+
+- **deps**: Bump pytest from 9.0.3 to 9.1.1
+  ([#11](https://github.com/MarcinSkrobczynski/pyfilesmanager/pull/11),
+  [`173f7a0`](https://github.com/MarcinSkrobczynski/pyfilesmanager/commit/173f7a0f9bd538466ca2fb09e84ecdc9c92a9bc0))
+
+
 ## v0.3.8 (2026-08-30)
 
 ### Build System
