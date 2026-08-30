@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v0.3.7 (2026-08-30)
+
+### Build System
+
+- **deps**: Bump astral-sh/setup-uv from 7.6.0 to 10.0.1
+  ([#18](https://github.com/MarcinSkrobczynski/pyfilesmanager/pull/18),
+  [`c221f9d`](https://github.com/MarcinSkrobczynski/pyfilesmanager/commit/c221f9d0202538f80c36784fad6b78eab891c35c))
+
+
 ## v0.3.6 (2026-08-30)
 
 ### Build System
