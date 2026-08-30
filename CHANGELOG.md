@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v0.3.6 (2026-08-30)
+
+### Build System
+
+- **deps**: Bump actions/setup-python from 6.3.0 to 7.0.0
+  ([#17](https://github.com/MarcinSkrobczynski/pyfilesmanager/pull/17),
+  [`68d3629`](https://github.com/MarcinSkrobczynski/pyfilesmanager/commit/68d36293e982b3bf69aa603ba183150cb5d73dff))
+
+
 ## v0.3.5 (2026-08-30)
 
 ### Continuous Integration
