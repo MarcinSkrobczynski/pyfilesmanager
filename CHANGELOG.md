@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v0.3.5 (2026-08-30)
+
+### Continuous Integration
+
+- Pin pre-commit and workflow dependencies
+  ([#16](https://github.com/MarcinSkrobczynski/pyfilesmanager/pull/16),
+  [`5cef08f`](https://github.com/MarcinSkrobczynski/pyfilesmanager/commit/5cef08f5055e4a99db5aa0a039eee56464175388))
+
+
 ## v0.3.4 (2026-08-25)
 
 ### Build System
