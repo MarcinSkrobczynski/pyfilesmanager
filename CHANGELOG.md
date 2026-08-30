@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v0.3.8 (2026-08-30)
+
+### Build System
+
+- **deps**: Bump click from 8.1.8 to 8.5.0
+  ([#19](https://github.com/MarcinSkrobczynski/pyfilesmanager/pull/19),
+  [`004423f`](https://github.com/MarcinSkrobczynski/pyfilesmanager/commit/004423f1ef451f7c14fc362f8b29e068616db11a))
+
+
 ## v0.3.7 (2026-08-30)
 
 ### Build System
